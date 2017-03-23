@@ -1,0 +1,416 @@
+@font-face {
+    src: url("fonts/Lato-Bold.ttf");
+    font-family: "Lato-Bold";
+}
+@font-face {
+    src: url("fonts/didot-bold.ttf");
+    font-family: "Didot";
+}
+@font-face {
+    src: url("fonts/PlayfairDisplay-Regular.ttf");
+    font-family: "PlayfairDisplay";
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 1440px;
+    overflow: hidden;
+}
+header{
+    display: block;
+}
+.nav{
+    display: block;
+    height: 42px;
+    border-bottom: 1px inset lightgray;
+}
+.correct{
+    padding-left: 150px;
+}
+.nav a{
+    font-family: 'Lato-Bold';
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(166,166,166);
+    letter-spacing: 1px;
+    padding-right: 29px;
+    padding-top: 13px;
+}
+.payment-area,
+.language-area{
+    display: inline-block;
+}
+.payment-area select{
+    margin-left: 778px;
+}
+.language-area{
+    border-left: 1px solid lightgray;
+    height: 42px;
+    padding-left: 20px;
+}
+.payment-area select,
+.language-area select {
+    font-family: 'Lato-Bold';
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(166,166,166);
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    background: transparent url(img/arrow.png) no-repeat right;
+    -webkit-appearance: none;
+
+    padding-right: 16px;
+    margin-top: 15px;
+    margin-right: 17px;
+}
+.main-nav{
+    display: block;
+    height: 100px;
+    border-bottom: 1px inset lightgray;
+}
+.logo, .nav-page{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.main-nav .logo{
+    padding-left: 145px;
+    padding-top: 19px;
+}
+.logo a{
+    font-family: "Didot";
+    font-size: 52px;
+    color: rgb(0,0,0);
+    text-decoration: none;
+}
+.logo span {
+    font-family: "Didot";
+    font-size: 32px;
+    color: rgb(0,0,0);
+}
+.nav-page {
+    text-align: right;
+    padding-left: 185px;
+    height: 45px;
+}
+.nav-page::after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+}
+.nav-page a{
+    font-family: 'Lato-Bold';
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(173,173,173);
+    letter-spacing: 1.5px;
+    margin-right: 48px;
+}
+.logo a, .nav-page a {
+    display: inline-block;
+    position: relative;
+}
+.nav-page a:hover{
+    color: rgb(2,2,2);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(26,127,215);
+}
+.nav-page .sale {
+    color: red;
+    margin-right: 67px;
+}
+.main-nav .bag button,
+.main-nav .search button{
+    display: inline-block;
+    font-family: 'Lato-Bold';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(173,173,173);
+    letter-spacing: 1.5px;
+    border: none;
+    background: transparent;
+    margin-bottom: 26px;
+}
+.bag{
+    padding-left: 60px;
+}
+.search{
+    padding-left: 15px;
+}
+.circle {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    border-radius: 100px; /* половина длины картинки */
+    border: 2px solid rgb(26,127,215);
+    margin-left: 7px;
+}
+.circle span{
+    display: inline-block;
+    padding: 20px;
+    padding-top: 15px;
+    font-family: 'Lato-Bold';
+    font-size: 15px;
+    color: black;
+}
+.bag,
+.search {
+    display: inline-block;
+}
+header::after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+}
+.products{
+    display: block;
+    height: auto;
+}
+.products h1 {
+    font-family: 'PlayfairDisplay';
+    font-size: 58px;
+    text-align: center;
+    padding-top: 82px;
+    padding-left: 5px;
+}
+.products-filter{
+    position: relative;
+    margin-top: 115px;
+    margin-left: 135px;
+    margin-right: 135px;
+    list-style: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+.products-filter p{
+    display: block;
+    position: absolute;
+    top: -65px;
+    margin-left: 25px;
+    text-align: center;
+
+}
+.products-filter .f-t-shirts,
+.products-filter .f-sweaters,
+.products-filter .f-shorts,
+.products-filter .f-jackets,
+.products-filter .f-all,
+.products-filter .f-accessoires {
+    font-family: 'Lato-Bold';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(173,173,173);
+    letter-spacing: 1.5px;
+    border: none;
+    background: transparent;
+    margin-right: 47px;
+}
+.products-filter button:focus{
+    outline: none;
+}
+.f-all {
+    margin-right: 30px;
+}
+.f-all:hover {
+    color: rgb(2,2,2);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(26,127,215);
+}
+.f-t-shirts {
+    margin-left: 2px;
+    background: transparent;
+}
+.f-t-shirts:hover {
+    color: rgb(2,2,2);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(26,127,215);
+}
+.f-sweaters {
+    margin-right: 30px;
+    background: transparent;
+}
+.f-sweaters:hover {
+    color: rgb(2,2,2);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(26,127,215);
+}
+.f-shorts{
+    margin-right: 30px;
+    background: transparent;
+}
+.f-shorts:hover {
+    color: rgb(2,2,2);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(26,127,215);
+}
+.f-jackets {
+    margin-right: 30px;
+}
+.f-jackets:hover {
+    color: rgb(2,2,2);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(26,127,215);
+}
+.f-accessoires {
+    margin-right: 30px;
+}
+.f-accessoires:hover {
+    color: rgb(2,2,2);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(26,127,215);
+}
+
+.t-shirts, .sweaters, .shorts,
+.jackets, .accessoires{
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+.t-shirts::after, .sweaters::after, .shorts::after,
+.jackets::after, .accessoires::after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.t-shirts h3, .sweaters h3, .shorts h3,
+ .jackets h3, .accessoires h3 {
+    font-family: 'PlayfairDisplay';
+    font-size: 16px;
+    text-align: center;
+    color: rgb(51,51,51);
+    letter-spacing: 0.1px;
+    padding-top: 20px;
+    padding-bottom: 4px;
+ }
+.t-shirts h5, .sweaters h5, .shorts h5,
+.jackets h5, .accessoires h5{
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+    color: rgb(166,166,166);
+    text-decoration:line-through;
+    display: inline;
+    text-align: center;
+    padding-left: 98px;
+    padding-right: 11px;
+}
+.t-shirts h4, .sweaters h4, .shorts h4,
+.jackets h4, .accessoires h4 {
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+    text-align: center;
+    color: rgb(166,166,166);
+}
+.t-shirts span, .sweaters span, .shorts span,
+.jackets span, .accessoires span {
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+    text-align: center;
+    color: red;
+    text-decoration: none;
+}
+.load {
+    display: block;
+    text-align: center;
+    padding-top: 17px;
+}
+.load a {
+    font-family: 'Lato-Bold';
+    font-size: 14px;
+    text-align: center;
+    color: rgb(166,166,166);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.load::after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+}
+.subscribe{
+    display: block;
+    width: 1440px;
+    height: 286px;
+    margin-top: 56px;
+    background-image: url("img/fon.png");
+}
+.subscribe h5 {
+    font-family: 'Lato-Bold';
+    font-size: 14px;
+    text-align: center;
+    color: rgb(77,106,125);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 64px;
+}
+.subscribe h2{
+    font-family: 'PlayfairDisplay';
+    font-size: 38px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding-top: 11px;
+}
+.subscribe .email{
+    display: block;
+    justify-content: center;
+    padding-left: 570px;
+    padding-top: 19px;
+}
+.subscribe .emails input{
+    font-family: 'Lato-Bold';
+    font-size: 18px;
+    padding-left: 22px;
+    letter-spacing: 2px;
+    display: block;
+    color: white;
+    height: 50px;
+    width: 280px;
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 50px;
+    outline:none;
+}
+.subscribe .sub input{
+
+    background-image: url("img/sub.png");
+    background-repeat: no-repeat;
+}
+footer{
+    display: block;
+    height: auto;
+}
+.foot-nav .logo{
+    padding-left: 148px;
+    padding-top: 21px;
+}
+
+.foot-nav>.nav-page{
+    padding-left: 191px;
+    color: black;
+}
+.mark{
+    display: inline-block;
+    font-family: 'Lato-Bold';
+    color: rgb(166,166,166);
+    padding-bottom: 28px;
+    padding-left: 23px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
